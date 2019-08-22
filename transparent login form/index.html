@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+	<script type="text/javascript">
+	function validate(){
+  var val1=document.getElementById("user");
+   var val2=document.getElementById("pass");
+   if(val1.value.trim()==""||val2.value.trim()=="")
+   {
+       alert("No blanck space is accepted");/*we can use html tag 
+       required in input tag to perform the same*/
+       return false;
+   }
+   else return true;
+} 
+	</script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+ 
+<div class="login-box">
+<form onsubmit=" return validate()" action="msg.html">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="user" type="text" placeholder="Username">
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input id="pass" type="password" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn">SUBMIT</button>
+  </form>
+</div>
+  </body>
+</html>
