@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>home page</title>
+        <script type="text/javascript">
+            function validate(){
+          var val1=document.getElementById("user");
+           var val2=document.getElementById("pass");
+           if(val1.value.trim()==""||val2.value.trim()=="")
+           {
+               alert("No blanck space is accepted");/*we can use html tag 
+               required in input tag to perform the same*/
+               return false;
+           }
+           else return true;
+        } 
+            </script>
+		<link rel="stylesheet" href="style3.css">
+    </head>
+        <body>
+    <div class="parallax"></div>
+   <div style="height:600px;font-size:36px">
+    <div class="jumbotron">
+        <h1 id="heading" class="display-3">Party Planner</h1>
+        <p class="lead">Celebration Time</p>
+       
+        <a class="btn" href="index.html" role="button">Login</a>
+        <a class="btn" href="#sup" role="button">Sign up</a>
+    </div>
+    </div>
+    <div id="sup"class="register">
+        <div class="login-box">
+            <form onsubmit="return validate()" action="msg.html">
+              <h1 style ="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Register</h1>
+              <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input id="user" type="text" placeholder="Enter Name">
+              </div>
+              <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input id="user" type="text" placeholder="Username Name">
+              </div>
+              <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input id="user" type="text" placeholder="Email">
+              </div>
+            
+              <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input id="pass" type="password" placeholder="Password">
+              </div>
+              <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input id="pass" type="password" placeholder="Confirm Password">
+              </div>
+              <button type="submit" class="btn">SUBMIT</button>
+              </form>
+            </div>
+    </div>
+</body>
+</html>
